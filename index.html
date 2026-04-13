@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Uniting Reformed Church</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Uniting Reformed Church</div>
+
+    <ul class="nav-links">
+        <li><a href="#" onclick="show('home')">Home</a></li>
+        <li><a href="#" onclick="show('about')">About</a></li>
+        <li><a href="#" onclick="show('leadership')">Leadership</a></li>
+        <li><a href="#" onclick="show('services')">Services</a></li>
+        <li><a href="#" onclick="show('announcements')">Announcements</a></li>
+        <li><a href="#" onclick="show('giving')">Giving</a></li>
+        <li><a href="#" onclick="show('location')">Location</a></li>
+        <li><a href="#" onclick="show('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active">
+    <div class="hero">
+        <h1>UNITING REFORMED CHURCH</h1>
+        <p>Loving God. Serving People. Growing Together.</p>
+        <p>"Where two or three gather in My name..." - Matthew 18:20</p>
+        <p>Sunday Service: 9:00 AM – 1:00 PM</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+    <div class="section">
+
+        <h2>About Us</h2>
+
+        <div class="card">
+            <h3>Church Identity</h3>
+            <p>
+                Uniting Reformed Church in Lillydale is a rural faith-based community
+                committed to spiritual growth, unity, and serving the people of Ximhungwe.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mission</h3>
+            <p>To spread the Gospel and uplift rural communities through faith and service.</p>
+        </div>
+
+        <div class="card">
+            <h3>Vision</h3>
+            <p>To build a strong, united, Christ-centered rural church community.</p>
+        </div>
+
+        <!-- ADDABLE CONTENT AREA -->
+        <div class="card">
+            <h3>Church Content Area (Editable)</h3>
+            <p>
+                This section is reserved for future church updates, teachings,
+                and information from church elders.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="page">
+    <div class="section">
+
+        <h2>Leadership (Pastors)</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Pastor David Khosa">
+                <h3>Mr David Khosa</h3>
+                <p>Senior Pastor</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Pastor Conny Khosa">
+                <h3>Mrs Conny Khosa</h3>
+                <p>Co-Pastor</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="page">
+    <div class="section">
+        <h2>Services</h2>
+
+        <div class="card">
+            <h3>Sunday Service</h3>
+            <p>9:00 AM – 1:00 PM</p>
+        </div>
+
+        <div class="card">
+            <h3>Youth Service</h3>
+            <p>Spiritual growth for youth (TBA)</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ANNOUNCEMENTS -->
+<section id="announcements" class="page">
+    <div class="section">
+
+        <h2>Announcements</h2>
+
+        <div class="card">
+            <h3>Church Notice</h3>
+            <p>No announcements yet. Check back soon for updates.</p>
+        </div>
+
+        <div class="card">
+            <h3>Upcoming Events</h3>
+            <p>Future church events will appear here.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GIVING -->
+<section id="giving" class="page">
+    <div class="section">
+
+        <h2>Offerings & Giving</h2>
+
+        <div class="card">
+            <h3>Banking Details</h3>
+            <p>Bank Name: [Add Bank]</p>
+            <p>Account Name: Uniting Reformed Church</p>
+            <p>Account Number: [Add Number]</p>
+            <p>Reference: Your Name</p>
+        </div>
+
+        <div class="card">
+            <h3>Send Proof of Payment</h3>
+            <p>WhatsApp: +27 60 694 1015</p>
+
+            <a class="whatsapp-btn" href="https://wa.me/27606941015" target="_blank">
+                Send Proof on WhatsApp
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="page">
+    <div class="section">
+        <h2>Location</h2>
+
+        <p>Lillydale, Mpumalanga</p>
+        <p>Ximhungwe 1281, South Africa</p>
+
+        <a class="map-btn" href="https://maps.app.goo.gl/Dq3QdSgvRCejZvt78" target="_blank">
+            Open Google Maps
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+    <div class="section">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+            <input id="name" placeholder="Your Name" required>
+            <input id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="successMsg"></p>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Uniting Reformed Church | Lillydale, Mpumalanga</p>
+    <p>Email: unitingreformedchurch@gmail.com | Tel: +27 60 694 1015</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
