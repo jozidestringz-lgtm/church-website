@@ -1,6 +1,13 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
   background: #f5f5f5;
 }
 
@@ -10,10 +17,12 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  align-items: center;
+  padding: 15px 20px;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -21,8 +30,8 @@ body {
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 15px;
 }
 
@@ -32,19 +41,20 @@ body {
   cursor: pointer;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   height: 90vh;
-  background: url("https://images.unsplash.com/photo-1507692049790-de58290a4334") center/cover;
+  background: url("https://images.unsplash.com/photo-1507692049790-de58290a4334") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
-/* PAGES */
+/* PAGE SYSTEM */
 .page {
   display: none;
   padding-top: 100px;
@@ -54,35 +64,44 @@ body {
   display: block;
 }
 
-/* SECTIONS */
+/* SECTION WRAPPER */
 .section {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
 }
 
+/* CARDS */
 .card {
   background: white;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 20px;
-  border-radius: 10px;
-  max-width: 300px;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* IMAGES */
 img {
   width: 100%;
+  max-width: 250px;
   border-radius: 10px;
 }
 
-/* FORM */
-form input, form textarea {
-  width: 90%;
-  margin: 10px;
+/* FORMS */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
   padding: 10px;
+  margin: 10px 0;
 }
 
 button {
   padding: 10px;
+  width: 100%;
   background: black;
   color: white;
   border: none;
@@ -95,4 +114,13 @@ button {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
