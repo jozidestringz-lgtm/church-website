@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uniting Reformed Church</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Uniting Reformed Church</div>
+
+  <!-- HAMBURGER BUTTON -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <ul class="nav" id="navMenu">
+    <li onclick="show('home')">Home</li>
+    <li onclick="show('branches')">Branches</li>
+    <li onclick="show('ministries')">Ministries</li>
+    <li onclick="show('leadership')">Leadership</li>
+    <li onclick="show('committee')">Committee</li>
+    <li onclick="show('giving')">Giving</li>
+    <li onclick="show('media')">Media Hub</li>
+    <li onclick="show('history')">History</li>
+    <li onclick="show('contact')">Contact</li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active">
+  <div class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>UNITING REFORMED CHURCH</h1>
+      <p class="sub">A place of worship, restoration and faith</p>
+
+      <div class="verse-box">
+        <h3>Sunday Services Start from 09:00 - 13:00</h3>
+        <p>“For where two or three gather in my name, there am I with them.”</p>
+        <small>— Matthew 18:20</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section id="branches" class="page">
+  <h2>OUR BRANCHES</h2>
+
+  <div class="card">
+    <h3>Lillydale</h3>
+    <p>Location: <a href="https://maps.app.goo.gl/HghohbEScZCmpT8z8" target="_blank">Open Map</a></p>
+    <p>Phone: +27 72 437 1537</p>
+  </div>
+
+  <div class="card">
+    <h3>Somerset</h3>
+    <p>Location: <a href="https://maps.app.goo.gl/Rp9k7qJYnfHRo8St8" target="_blank">Open Map</a></p>
+    <p>Phone: +27 72 437 1537</p>
+  </div>
+
+  <div class="card">
+    <h3>Alexandra</h3>
+    <p>Location: <a href="https://maps.app.goo.gl/Rp9k7qJYnfHRo8St8" target="_blank">Open Map</a></p>
+    <p>Phone: +27 72 437 1537</p>
+  </div>
+
+  <div class="card">
+    <h3>Oakley</h3>
+    <p>Location: <a href="https://maps.app.goo.gl/Rp9k7qJYnfHRo8St8" target="_blank">Open Map</a></p>
+    <p>Phone: +27 72 437 1537</p>
+  </div>
+</section>
+
+<!-- MINISTRIES -->
+<section id="ministries" class="page">
+  <h2>MINISTRIES</h2>
+
+  <div class="card">Sunday School</div>
+  <div class="card">Youth Ministry</div>
+  <div class="card">Mothers Ministry</div>
+  <div class="card">Fathers Ministry</div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="page">
+  <h2>LEADERSHIP</h2>
+
+  <div class="card">Lillydale Pastor: Mr David Khosa & Mrs Conny Khosa</div>
+  <div class="card">Somerset Pastor (WRITE NAME HERE)</div>
+  <div class="card">Alexandra Pastor (WRITE NAME HERE)</div>
+  <div class="card">Oakley Pastor (WRITE NAME HERE)</div>
+</section>
+  <section id="committee" class="page">
+  <h2>COMMITTEE MEMBERS</h2>
+
+  <!-- 🌍 WHOLE CHURCH COMMITTEE -->
+  <div class="card">
+    <h3>🌍 Church-Wide Committee</h3>
+
+    <p><strong>Chairperson:</strong> WRITE NAME HERE</p>
+    <p><strong>Secretary:</strong> WRITE NAME HERE</p>
+    <p><strong>Treasurer:</strong> WRITE NAME HERE</p>
+    <p><strong>Additional Members:</strong> WRITE NAMES HERE</p>
+  </div>
+
+  <!-- 🏛 BRANCH COMMITTEES -->
+  <div class="card">
+    <h3>🏛 Lillydale Branch Committee</h3>
+    <p>Chairperson: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Treasurer: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+  <div class="card">
+    <h3>🏛 Somerset Branch Committee</h3>
+    <p>Chairperson: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Treasurer: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+  <div class="card">
+    <h3>🏛 Alexandra Branch Committee</h3>
+    <p>Chairperson: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Treasurer: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+  <div class="card">
+    <h3>🏛 Oakley Branch Committee</h3>
+    <p>Chairperson: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Treasurer: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+  <!-- 🙏 MINISTRY COMMITTEES -->
+  <div class="card">
+    <h3>🙏 Youth Ministry Committee</h3>
+    <p>Leader: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+  <div class="card">
+    <h3>👶 Sunday School Committee</h3>
+    <p>Leader: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Teachers: WRITE NAMES HERE</p>
+  </div>
+
+  <div class="card">
+    <h3>👩 Mothers Ministry Committee</h3>
+    <p>Leader: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+  <div class="card">
+    <h3>👨 Fathers Ministry Committee</h3>
+    <p>Leader: WRITE NAME</p>
+    <p>Secretary: WRITE NAME</p>
+    <p>Members: WRITE NAMES HERE</p>
+  </div>
+
+</section>
+
+<!-- GIVING -->
+<section id="giving" class="page">
+  <h2>OFFERINGS & GIVING</h2>
+
+  <!-- LILLYDALE -->
+  <div class="card">
+    <h3>Lillydale Branch</h3>
+    <p>Bank Name: WRITE HERE</p>
+    <p>Account Name: WRITE HERE</p>
+    <p>Account Number: WRITE HERE</p>
+
+    <a href="https://wa.me/27724371537" target="_blank" class="whatsapp-btn">
+      📲 Send Proof via WhatsApp
+    </a>
+  </div>
+
+  <!-- SOMERSET -->
+  <div class="card">
+    <h3>Somerset Branch</h3>
+    <p>Bank Name: WRITE HERE</p>
+    <p>Account Name: WRITE HERE</p>
+    <p>Account Number: WRITE HERE</p>
+
+    <a href="https://wa.me/27724371537" target="_blank" class="whatsapp-btn">
+      📲 Send Proof via WhatsApp
+    </a>
+  </div>
+
+  <!-- ALEXANDRA -->
+  <div class="card">
+    <h3>Alexandra Branch</h3>
+    <p>Bank Name: WRITE HERE</p>
+    <p>Account Name: WRITE HERE</p>
+    <p>Account Number: WRITE HERE</p>
+
+    <a href="https://wa.me/27724371537" target="_blank" class="whatsapp-btn">
+      📲 Send Proof via WhatsApp
+    </a>
+  </div>
+
+  <!-- OAKLEY -->
+  <div class="card">
+    <h3>Oakley Branch</h3>
+    <p>Bank Name: WRITE HERE</p>
+    <p>Account Name: WRITE HERE</p>
+    <p>Account Number: WRITE HERE</p>
+
+    <a href="https://wa.me/27724371537" target="_blank" class="whatsapp-btn">
+      📲 Send Proof via WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- MEDIA HUB -->
+<section id="media" class="page">
+  <h2>CHURCH MEDIA HUB</h2>
+
+<div class="card">
+  <h3>📢 Announcements</h3>
+
+  <!-- ANNOUNCEMENT 1 -->
+  <div class="announcement">
+    <div class="title" onclick="toggleAnn(this)">
+      Youth Event This Sunday ▼
+    </div>
+
+    <div class="content">
+      <p>Join us for a powerful youth gathering this Sunday.</p>
+
+      <a href="https://youtube.com" target="_blank">▶ Watch Video</a><br>
+      <a href="https://facebook.com" target="_blank">📘 View on Facebook</a>
+    </div>
+  </div>
+
+  <!-- ANNOUNCEMENT 2 -->
+  <div class="announcement">
+    <div class="title" onclick="toggleAnn(this)">
+      Community Outreach Program ▼
+    </div>
+
+    <div class="content">
+      <p>We are hosting a community outreach next week.</p>
+
+      <a href="#" target="_blank">📄 View Details</a>
+    </div>
+  </div>
+
+</div>
+  <div class="card">
+  <h3>📅 Upcoming Events</h3>
+
+  <div class="event">
+    <h4>Sunday Service</h4>
+    <p>Date: WRITE DATE HERE</p>
+    <p>Time: WRITE TIME HERE</p>
+    <p>Venue: WRITE VENUE HERE</p>
+  </div>
+
+  <div class="event">
+    <h4>Youth Revival Night</h4>
+    <p>Date: WRITE DATE HERE</p>
+    <p>Time: WRITE TIME HERE</p>
+    <p>Venue: WRITE VENUE HERE</p>
+  </div>
+
+  <div class="event">
+    <h4>Community Outreach</h4>
+    <p>Date: WRITE DATE HERE</p>
+    <p>Time: WRITE TIME HERE</p>
+    <p>Venue: WRITE VENUE HERE</p>
+  </div>
+
+</div>
+
+<div class="card">
+  <h3>📸 Gallery</h3>
+
+  <div class="slider">
+    <img class="slide active" src="https://www.urcsa.net/wp-content/uploads/2025/04/cropped-cropped-Black-and-Gold-colour-replaced-nog-kleiner2-1.png">
+    <img class="slide" src="https://picsum.photos/id/1015/800/400">
+    <img class="slide" src="https://picsum.photos/id/1016/800/400">
+      <div class="slider">
+    <img class="slide active" src="https://www.urcsa.net/wp-content/uploads/2025/04/cropped-cropped-Black-and-Gold-colour-replaced-nog-kleiner2-1.png">
+    <img class="slide" src="https://picsum.photos/id/1015/800/400">
+    <img class="slide" src="https://picsum.photos/id/1016/800/400">
+
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+</div>
+
+<div class="card">
+  <h3>💼 Employment Opportunity</h3>
+
+  <p>Government Job Opportunity Available</p>
+
+  <a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank" class="vacancy-link">
+    Click here for more info
+  </a>
+</div>
+
+  <div class="card">
+    <h3>🌍 Social Media</h3>
+    <p>YouTube: WRITE LINK</p>
+    <p>Facebook: WRITE LINK</p>
+    <p>TikTok: WRITE LINK</p>
+  </div>
+</section>
+  <section id="history" class="page">
+  <h2>HISTORY OF THE CHURCH</h2>
+
+  <div class="card">
+    <h3>📖 Uniting Reformed Church in Southern Africa (URCSA)</h3>
+
+    <p>
+      The Uniting Reformed Church in Southern Africa (URCSA) has its roots in the deeply racially divided history of South African Christianity. The URCSA was formed by the union of the Black and Coloured Nederduits Gereformeerde Kerk mission churches...
+    </p>
+
+    <p>
+      It was not until April 14, 1994 that the DRMC and DRCA formally merged...
+    </p>
+
+    <p>
+      The Belhar Confession declared unity and justice...
+    </p>
+
+    <p>
+      URCSA continues to serve communities across Southern Africa...
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🏛 Branch History</h3>
+    <p><em>WRITE LILLYDALE HISTORY HERE</em></p>
+    <p><em>WRITE SOMERSET HISTORY HERE</em></p>
+    <p><em>WRITE ALEXANDRA HISTORY HERE</em></p>
+    <p><em>WRITE OAKLEY HISTORY HERE</em></p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+  <h2>CONTACT US</h2>
+
+  <div class="card">
+    <p>Lillydale</p>
+    <p>Alexandra</p>
+    <p>Oackly</p>
+    <p>Somerset</p>
+
+    <a href="https://wa.me/27724371537" target="_blank" class="whatsapp-btn">
+      Chat with us on WhatsApp
+    </a>
+  </div>
+
+  <input placeholder="Name">
+  <input placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+
+  <button onclick="send()">Send Message</button>
+
+  <p id="msg"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-line"></div>
+
+  <p>© 2026 Uniting Reformed Church. All rights reserved.</p>
+</footer>
